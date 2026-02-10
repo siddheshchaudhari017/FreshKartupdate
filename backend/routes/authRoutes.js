@@ -28,11 +28,11 @@ const {
 const { verifyRecaptcha } = require('../middleware/captchaMiddleware');
 
 // Public routes
-router.post('/register', verifyRecaptcha, validateRegistration, registerUser);
-router.post('/login', verifyRecaptcha, validateLogin, authUser);
+router.post('/register', registerRateLimiter, verifyRecaptcha, validateRegistration, registerUser);
+router.post('/login', loginRateLimiter, verifyRecaptcha, validateLogin, authUser);
 router.get('/verify-email/:token', verifyEmail);
-router.post('/resend-verification', validateEmail, resendVerification);
-router.post('/forgotpassword', validateForgotPassword, forgotPassword);
+router.post('/resend-verification', resendVerificationRateLimiter, validateEmail, resendVerification);
+router.post('/forgotpassword', passwordResetRateLimiter, validateForgotPassword, forgotPassword);
 router.put('/resetpassword/:resettoken', validateResetPassword, resetPassword);
 
 // Protected routes
