@@ -89,18 +89,22 @@ const HomePage = () => {
             // Removed animations to ensure visibility
 
             // Latest Products Title
-            gsap.from('.latest-title', {
-                x: -50,
-                opacity: 0,
-                duration: 0.6,
-                ease: 'power2.out'
-            });
+            if (document.querySelector('.latest-title')) {
+                gsap.from('.latest-title', {
+                    x: -50,
+                    opacity: 0,
+                    duration: 0.6,
+                    ease: 'power2.out'
+                });
+            }
 
             // Product Grid Animation (Simple fade-in for smooth filtering)
-            gsap.fromTo('.product-card-anim',
-                { opacity: 0, y: 30 },
-                { opacity: 1, y: 0, duration: 0.5, stagger: 0.05, ease: 'power2.out', clearProps: 'all' }
-            );
+            if (document.querySelector('.product-card-anim')) {
+                gsap.fromTo('.product-card-anim',
+                    { opacity: 0, y: 30 },
+                    { opacity: 1, y: 0, duration: 0.5, stagger: 0.05, ease: 'power2.out', clearProps: 'all' }
+                );
+            }
         });
 
         // Refresh ScrollTrigger to ensure positions are accurate after layout change

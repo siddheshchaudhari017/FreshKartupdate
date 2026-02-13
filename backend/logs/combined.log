@@ -149,6 +149,7 @@
 {"ip":"::1","level":"info","message":"GET /api/orders/myorders","service":"freshkart-auth","timestamp":"2026-02-10 05:35:11","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
 {"ip":"::1","level":"info","message":"GET /api/orders/698a762f5d353a68e0dff3a6","service":"freshkart-auth","timestamp":"2026-02-10 05:35:14","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
 {"ip":"::1","level":"info","message":"GET /api/orders/698a762f5d353a68e0dff3a6","service":"freshkart-auth","timestamp":"2026-02-10 05:35:15","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}
+<<<<<<< HEAD
 {"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-10 05:43:14"}
 {"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-10 06:14:28"}
 {"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 06:02:40"}
@@ -185,3 +186,60 @@
 {"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-12 12:42:11","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
 {"ip":"::1","level":"info","message":"GET /api/products/698d7b47acc733914653b4a0","service":"freshkart-auth","timestamp":"2026-02-12 12:42:14","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
 {"ip":"::1","level":"info","message":"GET /api/products/698d7b47acc733914653b4a0","service":"freshkart-auth","timestamp":"2026-02-12 12:42:14","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+=======
+>>>>>>> fc4c057e06e9ddcd6cc644d521e6e827af2f471d
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 13:14:51"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 13:15:21"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 13:15:28","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 13:15:28","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-12 13:15:28","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-12 13:15:28","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 13:17:10"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 13:17:50","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 13:17:50","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 13:17:50","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 13:17:50","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-12 13:17:51","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-12 13:17:51","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:03:47"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:04:13","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:07:11"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:11:14"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:11:22","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:11:32","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:12:55"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:13:00","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:13:10","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:15:00"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:16:05"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:16:10","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:16:20","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:19:33"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:21:08"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:21:33","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:27:34"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:28:04","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:28:50"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:28:54","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:29:04","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:33:13"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:33:39","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:43:05"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:43:11","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:43:21","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:43:48"}
+{"ip":"::1","level":"info","message":"GET /","service":"freshkart-auth","timestamp":"2026-02-12 14:43:59","userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7705"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-12 14:45:05"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:45:09","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-12 14:45:19","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-13 07:37:04"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-13 07:37:34","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-13 07:37:34","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-13 07:37:34","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-13 07:37:34","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-13 07:39:49"}
+{"level":"info","message":"Server started on port 5000","service":"freshkart-auth","timestamp":"2026-02-13 07:41:59"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-13 07:42:17","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products","service":"freshkart-auth","timestamp":"2026-02-13 07:42:17","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-13 07:42:17","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/products/top","service":"freshkart-auth","timestamp":"2026-02-13 07:42:17","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}

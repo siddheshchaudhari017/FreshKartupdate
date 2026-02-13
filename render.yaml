@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: freshkart-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        fromConfigVar: MONGO_URI
+      - key: JWT_SECRET
+        fromConfigVar: JWT_SECRET
+      - key: CLOUDINARY_CLOUD_NAME
+        fromConfigVar: CLOUDINARY_CLOUD_NAME
+      - key: CLOUDINARY_API_KEY
+        fromConfigVar: CLOUDINARY_API_KEY
+      - key: CLOUDINARY_API_SECRET
+        fromConfigVar: CLOUDINARY_API_SECRET
+      - key: FRONTEND_URL
+        value: https://freshkart.vercel.app

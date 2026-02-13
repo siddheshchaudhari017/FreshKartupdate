@@ -1,4 +1,3 @@
-const asyncHandler = require('express-async-handler');
 const User = require('../models/User');
 const generateToken = require('../utils/generateToken');
 const { auditLogger } = require('../utils/auditLogger');
@@ -15,7 +14,7 @@ const getClientIP = (req) => {
 // @desc    Auth user & get token
 // @route   POST /api/auth/login
 // @access  Public
-const authUser = asyncHandler(async (req, res) => {
+const authUser = async (req, res) => {
     const { email, password } = req.body;
     const ip = getClientIP(req);
     const userAgent = req.headers['user-agent'];
@@ -88,12 +87,12 @@ const authUser = asyncHandler(async (req, res) => {
         lastLogin: user.lastLogin,
         token: generateToken(user._id)
     });
-});
+};
 
 // @desc    Register a new user
 // @route   POST /api/auth/register
 // @access  Public
-const registerUser = asyncHandler(async (req, res) => {
+const registerUser = async (req, res) => {
     const { name, email, password, role } = req.body;
     const ip = getClientIP(req);
 
@@ -147,12 +146,12 @@ const registerUser = asyncHandler(async (req, res) => {
         res.status(400);
         throw new Error('Invalid user data');
     }
-});
+};
 
 // @desc    Verify email
 // @route   GET /api/auth/verify-email/:token
 // @access  Public
-const verifyEmail = asyncHandler(async (req, res) => {
+const verifyEmail = async (req, res) => {
     // Get hashed token
     const emailVerificationToken = crypto
         .createHash('sha256')
@@ -183,12 +182,12 @@ const verifyEmail = asyncHandler(async (req, res) => {
         message: 'Email verified successfully! You can now login.',
         token: generateToken(user._id)
     });
-});
+};
 
 // @desc    Resend verification email
 // @route   POST /api/auth/resend-verification
 // @access  Public
-const resendVerification = asyncHandler(async (req, res) => {
+const resendVerification = async (req, res) => {
     const { email } = req.body;
 
     const user = await User.findOne({ email });
@@ -220,12 +219,12 @@ const resendVerification = asyncHandler(async (req, res) => {
         success: true,
         message: 'Verification email sent successfully'
     });
-});
+};
 
 // @desc    Forgot Password
 // @route   POST /api/auth/forgotpassword
 // @access  Public
-const forgotPassword = asyncHandler(async (req, res) => {
+const forgotPassword = async (req, res) => {
     const { email } = req.body;
     const ip = getClientIP(req);
 
@@ -267,12 +266,12 @@ const forgotPassword = asyncHandler(async (req, res) => {
         res.status(500);
         throw new Error('Email could not be sent');
     }
-});
+};
 
 // @desc    Reset Password
 // @route   PUT /api/auth/resetpassword/:resettoken
 // @access  Public
-const resetPassword = asyncHandler(async (req, res) => {
+const resetPassword = async (req, res) => {
     const ip = getClientIP(req);
 
     // Get hashed token
@@ -313,12 +312,12 @@ const resetPassword = asyncHandler(async (req, res) => {
         message: 'Password reset successful',
         token: generateToken(user._id)
     });
-});
+};
 
 // @desc    Change password
 // @route   PUT /api/auth/change-password
 // @access  Private
-const changePassword = asyncHandler(async (req, res) => {
+const changePassword = async (req, res) => {
     const { oldPassword, newPassword } = req.body;
     const ip = getClientIP(req);
 
@@ -343,19 +342,19 @@ const changePassword = asyncHandler(async (req, res) => {
         message: 'Password changed successfully',
         token: generateToken(user._id) // Issue new token
     });
-});
+};
 
 // @desc    Logout user
 // @route   POST /api/auth/logout
 // @access  Private
-const logout = asyncHandler(async (req, res) => {
+const logout = async (req, res) => {
     // In a more advanced implementation, add token to blacklist
     // For now, just return success (client will remove token)
     res.json({
         success: true,
         message: 'Logged out successfully'
     });
-});
+};
 
 module.exports = {
     authUser,

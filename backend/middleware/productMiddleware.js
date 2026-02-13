@@ -1,8 +1,7 @@
-const asyncHandler = require('express-async-handler');
 const Product = require('../models/Product');
 
 // Middleware to load product by ID and attach to request
-const loadProduct = asyncHandler(async (req, res, next) => {
+const loadProduct = async (req, res, next) => {
     const product = await Product.findById(req.params.id);
 
     if (!product) {
@@ -13,7 +12,7 @@ const loadProduct = asyncHandler(async (req, res, next) => {
     req.resource = product; // Standard field for RBAC
     req.product = product;  // Specific field for controllers if needed
     next();
-});
+};
 
 module.exports = {
     loadProduct

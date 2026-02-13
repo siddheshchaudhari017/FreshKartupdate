@@ -1,11 +1,9 @@
-const asyncHandler = require('express-async-handler');
-
 // Middleware to check if user has required role(s)
 const requireRole = (roles) => {
     // Convert single role to array
     const allowedRoles = Array.isArray(roles) ? roles : [roles];
 
-    return asyncHandler(async (req, res, next) => {
+    return async (req, res, next) => {
         if (!req.user) {
             res.status(401);
             throw new Error('Not authorized, no user found');
@@ -18,12 +16,12 @@ const requireRole = (roles) => {
             res.status(403);
             throw new Error(`Access denied. Required role: ${allowedRoles.join(' or ')}`);
         }
-    });
+    };
 };
 
 // Middleware to check if user has specific permission
 const requirePermission = (permission) => {
-    return asyncHandler(async (req, res, next) => {
+    return async (req, res, next) => {
         if (!req.user) {
             res.status(401);
             throw new Error('Not authorized, no user found');
@@ -41,12 +39,12 @@ const requirePermission = (permission) => {
             res.status(403);
             throw new Error(`Access denied. Required permission: ${permission}`);
         }
-    });
+    };
 };
 
 // Middleware to check if user owns the resource
 const requireOwnership = (resourceField = 'user') => {
-    return asyncHandler(async (req, res, next) => {
+    return async (req, res, next) => {
         if (!req.user) {
             res.status(401);
             throw new Error('Not authorized, no user found');
@@ -75,7 +73,7 @@ const requireOwnership = (resourceField = 'user') => {
             res.status(403);
             throw new Error('Access denied. You do not own this resource');
         }
-    });
+    };
 };
 
 // Role hierarchy helper
@@ -92,7 +90,7 @@ const hasHigherRole = (userRole, targetRole) => {
 
 // Middleware to check role hierarchy
 const requireHigherRole = (targetRoleField = 'role') => {
-    return asyncHandler(async (req, res, next) => {
+    return async (req, res, next) => {
         if (!req.user) {
             res.status(401);
             throw new Error('Not authorized, no user found');
@@ -111,7 +109,7 @@ const requireHigherRole = (targetRoleField = 'role') => {
             res.status(403);
             throw new Error('Access denied. Insufficient role privileges');
         }
-    });
+    };
 };
 
 module.exports = {

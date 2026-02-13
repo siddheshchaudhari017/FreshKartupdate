@@ -1,8 +1,6 @@
-
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-
 const connectDB = require('./config/db');
 const { logger } = require('./utils/auditLogger');
 const {
@@ -11,10 +9,6 @@ const {
     hppConfig,
     cleanInput
 } = require('./middleware/securityMiddleware');
-
-console.log("Mongo URI from ENV:", process.env.MONGO_URI);
-
-connectDB();
 
 const app = express();
 
@@ -51,13 +45,22 @@ app.use('/api/upload', require('./routes/uploadRoutes'));
 app.use(require('./middleware/errorMiddleware').notFound);
 app.use(require('./middleware/errorMiddleware').errorHandler);
 
+// Start Server
+const startServer = async () => {
+    const PORT = process.env.PORT || 5000;
 
+    // Start listening first
+    const server = app.listen(PORT, () => {
+        console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+        logger.info(`Server started on port ${PORT}`);
+    });
 
+    // Then attempt to connect to DB
+    try {
+        await connectDB();
+    } catch (error) {
+        console.error(`Initial MongoDB connection failed: ${error.message}`);
+    }
+};
 
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-    logger.info(`Server started on port ${PORT}`);
-});
-
+startServer();

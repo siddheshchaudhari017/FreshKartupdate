@@ -1,8 +1,7 @@
 const axios = require('axios');
-const asyncHandler = require('express-async-handler');
 
 // Middleware to verify reCAPTCHA token
-const verifyRecaptcha = asyncHandler(async (req, res, next) => {
+const verifyRecaptcha = async (req, res, next) => {
     // Skip verification in development if no secret is provided or specifically disabled
     if (process.env.NODE_ENV === 'development' && !process.env.RECAPTCHA_SECRET_KEY) {
         return next();
@@ -33,6 +32,6 @@ const verifyRecaptcha = asyncHandler(async (req, res, next) => {
         res.status(500);
         throw new Error('Server error during CAPTCHA verification');
     }
-});
+};
 
 module.exports = { verifyRecaptcha };
